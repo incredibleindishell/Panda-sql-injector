@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 session_start();
 set_time_limit(0);
 
@@ -17,12 +16,6 @@ if(isset($_POST['ss']))
 
 <STYLE>
 body {
-	background-image: url("http://2.bp.blogspot.com/_pIX0Yrfc96k/TGbCp67f8rI/AAAAAAAADpc/ZYotXRwkT2M/s1600/ind43v.jpg");
-background-position: center center;
-background-repeat: no-repeat;
-background-size: 1000px 500px;
-background-color: #000000;
-background-attachment: fixed;
 font-family: Tahoma
 }
 tr {
@@ -130,13 +123,13 @@ A:active {
         width="100%" align="center" valign="top" rowspan="1"><font 
         color="red" face="comic sans ms"size="1"><b> 
         <font color=#ff9933> 
-        #########################################</font><font color=white>##############################################</font><font color=green>#############################################</font><br><font size=3 color=#ff9933 face="comic sans ms">
+        ####################################################</font><font color=white>#####################################################</font><font color=green>####################################################</font><br><font size=3 color=#ff9933 face="comic sans ms">
         Love To: <br><font size=2 color=white face="comic sans ms">Surbhi, Mrudu, Hary, Kavi ^_^ </font><br>
         Greetz to : <br><font size=2 color=white face="comic sans ms">Code Breaker ICA , 1046 ^_^ and Team IndiShell </font><br>
         <br></font>
         <b> 
         <font color=#ff9933> 
-        ###########################################</font><font color=white>############################################</font><font color=green>#############################################</font>
+        ####################################################</font><font color=white>#####################################################</font><font color=green>####################################################</font>
 						
            </table>
        </table> 
@@ -184,11 +177,13 @@ if($loc)
  if($_SESSION['sqlmap']=='')
  {
 	 
-	 ?> 
-	 <br>Please type path of sqlmap.py before proceeding :)<br><br>
+	 ?>
+
+<br><br>
+	 Please type path of sqlmap.py before proceeding :)<br><br>
 <form method=post>
 <input type=text name=sqlmap value="sqlmap location">
-<input type=submit name=ss value="set value"><p>
+<input type=submit name=ss value="set value"><p><br><br>
 </form>
 <?php
 
@@ -202,7 +197,9 @@ if($loc)
 if($_SESSION['launch']=='1')
 {
 	?>
-Type SQL Injection vulnerable URL in b0X given Below <br>
+
+<br>
+Type SQL Injection vulnerable URL in b0X given Below <br><br><br>
 <form method=post>
 <input type=text name=udata value="Injectable URL ">
 <input type=submit name=btn value="extract databases"><p>
